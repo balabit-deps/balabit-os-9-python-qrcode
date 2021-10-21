@@ -1,0 +1,141 @@
+python-qrcode (7.3.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Bump debhelper from old 12 to 13.
+
+  [ Gordon Ball ]
+  * Drop signing key, upstream appears to no longer sign releases
+  * Update control, watch homepage to github.com/lincolnloop/python-qrcode
+  * New upstream version 7.3.1
+  * Standards-Version: 4.6.0
+  * Rules-requires-root: no
+  * Update dependencies: -six, +pytest, pil->pillow
+  * Simplify d/rules
+  * Add autopkgtest
+
+ -- Gordon Ball <gordon@chronitis.net>  Thu, 21 Oct 2021 19:24:34 +0000
+
+python-qrcode (6.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #938111
+  * add six and pil to b-d, needed to run tests
+  * Ignore tests errors, they need more work to pass the entire suite
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 15 Dec 2019 13:09:08 -0500
+
+python-qrcode (6.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 29 Jan 2019 23:16:00 +0100
+
+python-qrcode (6.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove trailing whitespaces
+  * d/rules: Remove trailing whitespaces
+  * d/control: Remove ancient XS-Python-Version field
+
+  [ Hugo Lefeuvre ]
+  * New upstream release.
+  * debian/copyright:
+    - Update copyright years.
+  * Bump compat to 11.
+  * debian/control:
+    - Bump debhelper dependency to match new compat.
+    - Bump Standards to 4.1.5.
+    - Remove useless XS-Python-Version field.
+    - Add autopkgtest-pkg-python stanza
+
+ -- Hugo Lefeuvre <hle@debian.org>  Sat, 21 Jul 2018 15:51:14 -0400
+
+python-qrcode (5.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Remove Cornelius Koelbel from the Maintainer field. His e-mail address
+      was not valid anymore (Closes: #832329).
+    - Set the DPMT as Maintainer.
+    - Add myself to the Uploaders field.
+    - Update Vcs-* fields to match new repository.
+  * debian/copyright:
+    - Add a copyright entry for Hugo Lefeuvre.
+    - Update copyright years.
+  * debian/rules:
+    - Install manpage for the Python 3 version of the package as
+      python3-qrcode.1 (Closes: #831980).
+  * debian/python{3,}.postinst:
+    - Specify the manpage in --slave, so that qr.1.gz is always a valid
+      manpage when one of the two binary packages is installed.
+  * Add upstream's public key to debian/upstream and verify signatures in
+    debian/watch.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Tue, 23 Aug 2016 00:05:39 +0200
+
+python-qrcode (5.0.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Added Python 3 support (Closes: #830977).
+  * Using debhelper >= 9.
+  * Standards-Version is now 3.9.8 (no change).
+  * debian/copyright in parseable format 1.0.
+  * Fixes URLs (using https everywhere).
+  * Using update-alternatives to provide /usr/bin/qr.
+  * rm debian/source/include-binaries.
+  * Switch to python{3,}-pil as depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 13 Jul 2016 12:31:48 +0000
+
+python-qrcode (5.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Added myself to Uploaders.
+  * control, rules: Migrate to dh_python2.
+  * control: Bump policy to 3.9.6, no changes.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 16 Oct 2014 11:30:57 +0300
+
+python-qrcode (4.0.4-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Sat, 09 Nov 2013 23:02:24 -0500
+
+python-qrcode (4.0.1-2) unstable; urgency=low
+
+  * add missing python-six dependency (Closes: #724489)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 24 Sep 2013 14:03:40 -0400
+
+python-qrcode (4.0.1-1) unstable; urgency=low
+
+  * updated to latest upstream release
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Thu, 12 Sep 2013 13:11:07 -0400
+
+python-qrcode (2.5-1) unstable; urgency=low
+
+  [ Cornelius Kölbel (Debian Packaging) ]
+  * added man-page for qr
+  * Initial Release (Closes: #700425)
+
+ -- Cornelius Kölbel (Debian Packaging) <cornelius.koelbel@lsexperts.de>  Thu, 14 Feb 2013 12:21:19 +0100

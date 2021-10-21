@@ -1,0 +1,36 @@
+Source: python-qrcode
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Hans-Christoph Steiner <hans@eds.org>,
+           Timo Aaltonen <tjaalton@debian.org>,
+           Hugo Lefeuvre <hle@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-pillow,
+               python3-pytest,
+               python3-setuptools,
+Standards-Version: 4.6.0
+Testsuite: autopkgtest-pkg-python
+Homepage: https://github.com/lincolnloop/python-qrcode
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-qrcode.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-qrcode
+Rules-Requires-Root: no
+
+Package: python3-qrcode
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-pillow,
+Description: QR Code image generator library - Python 3.x
+ This package provides a pure Python QR Code generator module. It uses
+ the Python Imaging Library (PIL) to allow for the generation of QR Codes.
+ In contrast to the python-qrencode module this module does not need
+ an additional C library.
+ .
+ In addition this package provides a command line tool to generate QR
+ codes and either write these QR codes to a file or do the output
+ as ascii art at the console.
+ .
+ This package provides the Python 3.x module.

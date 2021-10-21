@@ -1,0 +1,11 @@
+
+This git repository is created with the upstream git commits included.  The basic procedure for updating it is:
+
+  git remote add upstream https://github.com/lincolnloop/python-qrcode
+  git fetch upstream
+  git-import-orig --upstream-vcs-tag=v5.0.1 ../qrcode-5.0.1.tar.gz
+
+More on this topic:
+http://www.eyrie.org/~eagle/journal/2013-04/001.html
+
+ -- Hans-Christoph Steiner <hans@eds.org>, Wed, 15 Oct 2014 16:07:07 -0400
